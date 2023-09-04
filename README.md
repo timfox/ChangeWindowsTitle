@@ -1,2 +1,16 @@
 # WindowTitleChanger
-This Unity Asset allows you to change the window title of a game. This can be useful for window context when the game is minimzed or to see status changes in the Window title, for example a new message or a new resource have spawned. This can also be useful for Breadcrumbs.
+This Unity Asset provides an easy and efficient way to dynamically change the window title of your Unity game when running on Windows. Whether you need to provide additional context to your players when the game window is minimized, indicate new in-game messages, or update resource spawn information, this asset has you covered.
+
+```C#
+using UnityEngine;
+
+public class ExampleUsage : MonoBehaviour
+{
+    void Start()
+    {
+        WindowTitleChanger.Instance.ChangeTitle("New Game Title");
+    }
+}
+```
+
+![WindowTitleChanger](https://github.com/timfox/WindowTitleChanger/assets/459247/c73b83a5-7a93-4c8f-a550-cc51387d44f6)
